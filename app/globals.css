@@ -31,3 +31,126 @@ body {
     text-wrap: balance;
   }
 }
+
+/* variable  */
+:root {
+  --primary-bg: #202020;
+  --secondary-bg: #101010;
+  --primary-color:#A6ACAF;
+  --green-bg:#2B9E76;
+  --hover-bg:#2C2C2C;
+  --scrollbar-color:#474747;
+  --plain-white:#fff;
+  --sub-text-color:#646464;
+}
+.primary-bg{background-color: var(--primary-bg);}
+.secondary-bg{background-color: var(--secondary-bg);}
+.primary-color{color: var(--primary-color);}
+.green-bg{background-color:var(--green-bg) ;}
+.hover-bg{background-color: var(--hover-bg);}
+.sub-text-color{color: var(--sub-text-color);}
+.color-green{color:var(--green-bg)}
+h1,h2,h3,h4,h5,h6,p,button{
+  color:var(--primary-color);
+}
+.activeNav{
+  background-color: var(--green-bg);
+}
+
+.leftNavbar a svg{
+  width: 24px;
+  height: 24px;
+  color:var(--primary-color);
+  transition: all 0.5s ease-in-out;
+}
+.leftNavbar a:hover svg path{
+  fill:var(--green-bg);
+  color:var(--green-bg)
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  background-color: transparent;
+  opacity: 0;
+  
+}
+.custom-scrollbar:hover::-webkit-scrollbar-thumb  {
+   background:var(--scrollbar-color); 
+   opacity: 1;
+}
+
+ input[type=range] {
+  -webkit-appearance: none;
+  height: 5px;
+  width: 100%;
+  background: #2a2a2a;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+ 
+} 
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--green-bg);
+  cursor: pointer;
+}
+.leftSidebarFixed{
+  position: fixed;
+  left: 0;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+  display: block;
+}
+.rightSidebarShow{
+  position: fixed;
+  right:0;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+  display: block;
+}
+.activeToggleBtn{
+  background-color: var(--green-bg);
+  color: var(--plain-white);
+  transition: all 0.3s ease-in-out;
+}
+.hover-style:hover{
+  background-color:var(--hover-bg);
+  
+}
+.hover-style:hover h2{
+  color:var(--green-bg);
+}
+.hover-style:hover svg path{
+  fill:var(--green-bg)
+}
+.hover-style:hover h3{
+  color: var(--plain-white);
+}
+.sharebox-wrapper button svg{
+  width:24px;
+  height:24px;
+  color:var(--primary-color)
+}
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
